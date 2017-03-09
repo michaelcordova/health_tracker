@@ -1,0 +1,19 @@
+
+
+/* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
+
+body {
+    background: url('../img/background.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+thead {
+    background-color: papayawhip;
+}
+
+tbody {
+    background-color: rgba(221, 221, 221, 0.63);
+}

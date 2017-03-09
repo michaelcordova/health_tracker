@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Health Tracker</title>
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/full.css">
+
+    </head>
+    <body class="full">
+
+        <!-- App Info -->
+        <div class="jumbotron" id="app-info">
+            <div class="container">
+                <h1>Health Tracker</h1>
+                <p>We provide you the alternative to know how many calories are in the foods that you eat.  Start now and keep calories under control.</p>
+            </div>
+        </div>
+
+        <!-- Search section -->
+        <div class="container">
+            <section class="input-group" id="search">
+                <input type="text" class="form-control" id="search-text" placeholder="Search for ..." autofocus>
+                <span class="input-group-btn">
+                    <button class="btn btn-secondary" id="search-button">Search</button>
+                </span>
+            </section>
+            <ul>
+
+            </ul>
+
+            <!-- Search results -->
+            <selection class="container" id="search-result" style="display: none">
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead class="thead-default">
+                            <tr>
+                                <th>Brand Name</th>
+                                <th>Food</th>
+                                <th>Calories</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-rows">
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </selection>
+        </div>
+
+
+        <!--
+            **** Template scripts ****
+        -->
+        <script type="text/template" id="tpte-search-results">
+            <tr id="table-rows">
+                <td><%=  brand %></td>
+                <td><%=  name %></td>
+                <td><%= calories %></td>
+                <td><button id="add-btn" type="button" class="btn btn-primary">Add</button></td>
+            </tr>
+        </script>
+
+        <!--
+            **** JavaScripts files ****
+        -->
+        <script src="js/lib/jquery-3.1.1.min.js"></script>
+        <script src="js/lib/underscore-1.8.3.js"></script>
+        <script src="js/lib/backbone-1.3.3.js"></script>
+        <script src="js/lib/backbone-localstorage.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+        <script src="js/app/app.js"></script>
+        <script src="js/collections/collections.js"></script>
+        <script src="js/models/model.js"></script>
+        <script src="js/views/appview.js"></script>
+
+    </body>
+</html>
